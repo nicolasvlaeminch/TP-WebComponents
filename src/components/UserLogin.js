@@ -13,10 +13,32 @@ class UserLogin extends HTMLElement {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    padding: 60px;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+                h2 {
+                    font-family: 'Arial', sans-serif;
+                    font-size: 24px;
+                    color: #333; /* Color de la fuente del título */
+                    text-align: center;
                 }
                 .form-group {
                     display: flex;
                     flex-direction: column;
+                }
+                label {
+                    font-family: 'Arial', sans-serif;
+                    font-size: 16px;
+                    color: #555; /* Color de la fuente de los labels */
+                }
+                input {
+                    padding: 10px;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 14px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
                 }
                 button {
                     padding: 10px;
@@ -25,12 +47,15 @@ class UserLogin extends HTMLElement {
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 16px;
                 }
                 button:hover {
                     background-color: #0056b3;
                 }
             </style>
             <form id="login-form">
+                <h2>Iniciar Sesión</h2>
                 <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
@@ -39,7 +64,7 @@ class UserLogin extends HTMLElement {
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Iniciar Sesión</button>
+                <button type="submit">Ingresar</button>
             </form>
         `;
 
